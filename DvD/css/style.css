@@ -1,0 +1,76 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #15181f;
+}
+
+label {
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  cursor: pointer;
+}
+
+#p5_loading {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.load {
+  position: relative;
+  display: block;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  top: 35%;
+}
+
+.img {
+  width: 10%;
+  height: 10%;
+}
+
+input#un-mute {
+  display: none;
+}
+
+.unmute img {
+  display: none;
+}
+
+#speaker,
+#mute {
+  opacity: 1;
+}
+
+#speaker:hover,
+#mute:hover {
+  opacity: 0.6;
+}
+
+input#un-mute:checked ~ .unmute img {
+  display: initial;
+}
+
+input#un-mute:checked ~ .mute img {
+  display: none;
+}
+
+.github {
+  position: absolute;
+  bottom: 2%;
+  right: 2%;
+  transform: scale(0.7);
+  opacity: 0.6;
+  background: #15181f;
+}
+
+.github:hover {
+  opacity: 1;
+}
+
+canvas {
+  display: block;
+}

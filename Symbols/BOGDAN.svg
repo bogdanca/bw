@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1282" height="227" viewBox="0 0 1282 227">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: square;
+        stroke-linejoin: bevel;
+        stroke-width: 5px;
+        font-size: 155px;
+        font-family: Poppins-Bold, Poppins;
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <text id="BOGDAN" class="cls-1" transform="translate(5 5)"><tspan x="293.992" y="163">BOGDAN</tspan></text>
+</svg>

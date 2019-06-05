@@ -1,0 +1,353 @@
+@import url("https://fonts.googleapis.com/css?family=Gothic+A1");
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+body {
+  font-family: "Gothic A1", sans-serif;
+  font-size: 16px;
+  animation: bg-color 1s ease-out forwards;
+  text-align: center;
+}
+
+table {
+  position: relative;
+  margin: 0 auto;
+  border-collapse: collapse;
+  top: 19vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+td {
+  border: 2px solid #333;
+  height: 120px;
+  width: 120px;
+  box-sizing: border-box;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 70px;
+  cursor: pointer;
+}
+
+table tr:first-child td {
+  border-top: 0;
+}
+
+table tr:last-child td {
+  border-bottom: 0;
+}
+
+table tr td:first-child {
+  border-left: 0;
+}
+
+table tr td:last-child {
+  border-right: 0;
+}
+
+button {
+  cursor: pointer;
+  background-color: #333;
+  color: #fff;
+  border: 0;
+  outline: 0;
+  margin-top: 28vh;
+}
+
+.replayButton {
+  padding: 15px 30px;
+  width: 300px;
+}
+
+button:hover {
+  background-color: rgb(22, 22, 22);
+}
+
+button:active {
+  background-color: rgb(65, 64, 64);
+  content: "";
+  clear: both;
+}
+
+.end-game {
+  padding: 30px;
+  width: 300px;
+  box-sizing: border-box;
+  margin-top: 15px;
+  background-color: #333;
+  color: #fff;
+  border: 0;
+  border-left: 10px solid #9e9e9e;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.downArrow {
+  position: absolute;
+  animation: bg-color 1s ease-out forwards;
+  right: 50%;
+  bottom: 3%;
+  height: 70px;
+  width: 70px;
+  cursor: pointer;
+  animation: arrows 4s ease-in infinite;
+  opacity: 0.35;
+  transform: translate(-50%, -50%);
+  margin-right: -35px;
+}
+.downArrow:hover {
+  opacity: 1;
+}
+
+.upArrow {
+  position: absolute;
+  animation: bg-color 1s ease-out forwards;
+  right: 50%;
+  top: 3%;
+  height: 70px;
+  width: 70px;
+  cursor: pointer;
+  animation: arrows 4s ease-in infinite;
+  opacity: 0.35;
+  margin-right: -35px;
+}
+.upArrow:hover {
+  opacity: 1;
+}
+
+.github {
+  position: absolute;
+  bottom: 2%;
+  right: 2%;
+  animation: bg-color 1s ease-out forwards;
+  transform: scale(0.7);
+  opacity: 0.6;
+}
+
+.github:hover {
+  opacity: 1;
+}
+
+.myForm {
+  position: absolute;
+  top: 10%;
+}
+
+.difficulty-container {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-136px);
+}
+.rdo {
+  cursor: pointer;
+  position: relative;
+  display: block;
+  float: left;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: #606062;
+  background-image: linear-gradient(#474749, #606062);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.212);
+  transition: all 0.15s ease;
+}
+
+.rdo:after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 8px;
+  left: 7px;
+  width: 16px;
+  height: 15px;
+  border-radius: 50%;
+  background: white;
+  opacity: 0;
+  transform: scale(0);
+}
+
+.rdo + span {
+  cursor: pointer;
+  float: left;
+  margin-left: 8px;
+  margin-right: 8px;
+  font-weight: bold;
+  margin-top: 4px;
+}
+
+.forms {
+  margin: auto;
+  user-select: none;
+}
+
+.label {
+  display: inline-block;
+  margin: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+}
+
+input[type="radio"]:checked + .rdo {
+  background-color: #606062;
+  background-image: linear-gradient(#000000, #181818);
+  font-weight: normal;
+}
+
+input[type="radio"]:checked:after {
+  opacity: 1;
+  transform: scale(1);
+  transition: all 0.15s ease;
+}
+
+.rdo:after {
+  opacity: 1;
+  transform: scale(1);
+  transition: all 0.15s ease;
+}
+
+@keyframes arrows {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(0.85);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(0.85);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes bg-color {
+  0% {
+    background-color: rgb(11, 15, 27);
+  }
+
+  100% {
+    background-color: rgb(121, 121, 121);
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .upArrow {
+    top: 1px;
+    height: 50px;
+    width: 50px;
+    margin-right: -25px;
+  }
+
+  .downArrow {
+    bottom: 1px;
+    height: 50px;
+    width: 50px;
+    margin-right: -25px;
+  }
+
+  .github {
+    bottom: 1%;
+    right: 1%;
+  }
+
+  .replayButton {
+    margin-top: 250px;
+  }
+  .difficulty-container {
+    top: 670px;
+  }
+  .end-game {
+    margin-top: 10%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .replayButton {
+    margin-top: 170px;
+  }
+  .difficulty-container {
+    top: 670px;
+  }
+  .end-game {
+    margin-top: 10%;
+  }
+  .rdo + span {
+    float: left;
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-top: 4px;
+  }
+  .difficulty-container {
+    position: relative;
+    top: 95%;
+    margin-top: 20px;
+    left: 20%;
+    transform: translate(-10px);
+  }
+}
+
+@media screen and (max-height: 680px) {
+  .replayButton {
+    margin-top: 135px;
+  }
+  .difficulty-container {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-height: 850px) {
+  .upArrow {
+    top: 1px;
+    height: 50px;
+    width: 50px;
+    margin-right: -25px;
+  }
+
+  .downArrow {
+    bottom: 1px;
+    height: 50px;
+    width: 50px;
+    margin-right: -25px;
+  }
+
+  .github {
+    bottom: 1%;
+    right: 1%;
+  }
+}

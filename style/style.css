@@ -1,0 +1,253 @@
+*{
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border: 0;
+    outline: 0;
+  }
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+body {
+    background-color: rgb(11, 15, 27);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#logo1 {
+    width:50%;
+    height: 50%;
+}
+
+#logo2 {
+    position: absolute;
+    width:20%;
+    height: 20%;
+    top: 57%;
+    right: 25%;
+}
+
+#logo2 path{
+    stroke-dasharray: 829.5px;
+    stroke-dashoffset: 829.5px;
+    animation: opacity 0.4s;
+    animation: line-anmi 2s forwards 0.3s, Fills2 .5s forwards 2.5s;
+}
+
+/*selecteaza nth - path din class logo si maximizeaza stroke-dasharray si */
+
+#logo1 path:nth-child(1){
+    stroke-dasharray: 191.80px;
+    stroke-dashoffset: 191.80px;
+    animation: line-anmi 2s forwards 0.3s, Fills .5s forwards 2.5s;
+}
+#logo1 path:nth-child(2){
+    stroke-dasharray: 183.52px;
+    stroke-dashoffset: 183.52px;
+    animation: line-anmi 2s forwards 0.3s, Fills .5s forwards 2.5s;
+}
+#logo1 path:nth-child(3){
+    stroke-dasharray: 266px;
+    stroke-dashoffset: 266px;
+    animation: line-anmi 2s forwards 0.3s, Fills .5s forwards 2.5s;
+}
+#logo1 path:nth-child(4){
+    stroke-dasharray: 190px;
+    stroke-dashoffset: 190px;
+    animation: line-anmi 2s forwards 0.3s, Fills .5s forwards 2.5s;
+}
+#logo1 path:nth-child(5){
+    stroke-dasharray: 200px;
+    stroke-dashoffset: 200px;
+    animation: line-anmi 2s forwards 0.3s, Fills .5s forwards 2.5s;
+}
+#logo1 path:nth-child(6){
+    stroke-dasharray: 255px;
+    stroke-dashoffset: 255px;
+    animation: line-anmi 2s forwards 0.3s, Fills .5s forwards 2.5s;
+}
+
+.github{
+    position: absolute;
+    bottom: 2%;
+    right: 2%;
+    background-color: rgb(11, 15, 27);
+    transform: scale(0.7);
+    opacity: 0.8;
+  }  
+
+  .github:hover{
+    opacity: 1;
+  }  
+
+  
+.downArrow{
+    position: absolute;
+    background: rgb(11, 15, 27);
+    right: 50%;
+    bottom: 3%;
+    height: 70px;
+    width: 70px;
+    cursor: pointer;
+    animation: arrows 4s ease-in infinite;
+    opacity: 0.35;
+    margin-right: -35px;
+}
+.downArrow:hover{
+    opacity: 1;
+}
+
+@keyframes arrows {
+    0% {
+        transform: scale(1);
+    }
+    25%{
+        transform: scale(0.85);
+    }
+    50% {
+        transform: scale(1);
+    }
+    75%{
+        transform: scale(0.85);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+@keyframes line-anmi {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+@-webkit-keyframes Fills {
+    from {
+        fill:transparent;
+        stroke-width:2px;
+    }
+    to {
+        fill: white;
+        stroke-width:0;
+    }
+}
+@keyframes Fills {
+    from {
+        fill:transparent;
+        stroke-width:2px;
+    }
+    to {
+        fill: white;
+        stroke-width:0;
+    }
+}    
+
+@-webkit-keyframes Fills2 {
+    from {
+        fill:transparent;
+        stroke-width:2px;
+    }
+    to {
+        fill:  rgb(151, 149, 149);
+        stroke-width:0;
+    }
+}
+@keyframes Fills2 {
+    from {
+        fill:transparent;
+        stroke-width:2px;
+    }
+    to {
+        fill: rgb(151, 149, 149);
+        stroke-width:0;
+    }
+} 
+
+@media only screen and (max-width: 1400px)  {
+    #logo1{
+        width: 90%;
+        height: 90%;
+    }
+
+    #logo2{
+        width: 32%;
+        height: 32%;
+        right: 9%;
+    }
+}
+
+@media only screen and (max-width: 1024px)  {
+    #logo1{
+        width: 75%;
+        height: 75%;
+    }
+    #logo2{
+        top:48%;
+        width: 32%;
+        height: 32%;
+        right: 12%;
+    }
+
+    .downArrow{
+        height: 50px;
+        width: 50px;
+        margin-right: -25px;
+        }
+}
+
+@media only screen and (max-width: 650px)  {
+    #logo1{
+        width: 80%;
+        height: 80%;
+    }
+    #logo2{
+        top:44%;
+        width: 32%;
+        height: 32%;
+        right: 11%;
+    }
+    .downArrow{
+        height: 50px;
+        width: 50px;
+        margin-right: -25px;
+        }
+}
+
+
+@media only screen and (max-width: 376px)  {
+    #logo1{
+        width: 80%;
+        height: 80%;
+    }
+    #logo2{
+        top:42%;
+        width: 32%;
+        height: 32%;
+        right: 11%;
+    }
+    .downArrow{
+        height: 50px;
+        width: 50px;
+        margin-right: -25px;
+        }
+}
+
+  
