@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
   background: #15181f;
+  overflow: hidden;
 }
 
 label {
@@ -73,4 +74,16 @@ input#un-mute:checked ~ .mute img {
 
 canvas {
   display: block;
+}
+
+@media screen and (max-width: 650px) {
+  img.load {
+    width: 300px;
+    height: auto;
+  }
+
+  .github {
+    bottom: 1%;
+    right: 1%;
+  }
 }
